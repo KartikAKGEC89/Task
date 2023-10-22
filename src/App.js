@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
-import WhySwift from "./Pages/WhySwift";
+import Home from "./pages/Home";
+import WhySwift from "./pages/WhySwift";
 
 function App() {
   return (

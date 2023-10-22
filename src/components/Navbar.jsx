@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Components.css";
 import { Link } from "react-router-dom";
-import phone from "../Assets/call.svg"
-import hamburger from "../Assets/hamburger.svg"
+import phone from "../assets/call.svg"
+import hamburger from "../assets/hamburger.svg"
 
 const Navbar = () => {
 

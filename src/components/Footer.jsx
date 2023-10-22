@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import downArrow from "../Assets/downArrow.svg"
-import upArrow from "../Assets/upArrow.svg"
-import fb from "../Assets/facebook.svg"
-import insta from "../Assets/insta.svg"
-import x from "../Assets/x.svg"
-import linkedin from "../Assets/linkedin.svg"
+import downArrow from "../assets/downArrow.svg"
+import upArrow from "../assets/upArrow.svg"
+import fb from "../assets/facebook.svg"
+import insta from "../assets/insta.svg"
+import x from "../assets/x.svg"
+import linkedin from "../assets/linkedin.svg"
 
 const Footer = () => {
 

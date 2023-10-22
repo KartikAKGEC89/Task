@@ -1,9 +1,9 @@
 import React from "react";
-import support from "../Assets/support.svg";
-import rate from "../Assets/rate.svg";
-import email from "../Assets/email.svg";
-import email2 from "../Assets/email2.svg";
-import warehouse from "../Assets/warehouse.svg";
+import support from "../assets/support.svg";
+import rate from "../assets/rate.svg";
+import email from "../assets/email.svg";
+import email2 from "../assets/email2.svg";
+import warehouse from "../assets/warehouse.svg";
 
 const Moto = () => {
   return (

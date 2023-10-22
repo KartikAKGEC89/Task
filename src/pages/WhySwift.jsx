@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
-import bgImg from "../Assets/bgImg.svg";
+import Navbar from "../components/Navbar";
+import bgImg from "../assets/bgImg.svg";
 import "./Pages.css";
-import swissImg from "../Assets/whySwissImg.svg";
-import coatsHire from "../Assets/coatsHire.svg";
-import system from "../Assets/system.svg";
-import abc from "../Assets/abc.svg";
-import Middle from "../Components/Middle";
-import Footer from "../Components/Footer";
-import img from "../Assets/img.svg";
+import swissImg from "../assets/whySwissImg.svg";
+import coatsHire from "../assets/coatsHire.svg";
+import system from "../assets/system.svg";
+import abc from "../assets/abc.svg";
+import Middle from "../components/Middle";
+import Footer from "../components/Footer";
+import img from "../assets/img.svg";
 
 
 const WhySwift = () => {
