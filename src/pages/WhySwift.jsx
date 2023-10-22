@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import bgImg from "../assets/bgImg.svg";
-import "./Pages.css";
+import "./pages.css";
 import swissImg from "../assets/whySwissImg.svg";
 import coatsHire from "../assets/coatsHire.svg";
 import system from "../assets/system.svg";
