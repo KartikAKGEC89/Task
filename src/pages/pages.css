@@ -1,7 +1,53 @@
-.heading {
-background: #FFFFFF;
-width: 801px;
-height: 128px;
-top: -2980px;
-left: -1441px;
+.homeHero {
+    background-image: url("../assets/bgImgHome.svg");
+    height: 50vw;
+    background-size: cover;
+    position: relative;
+}
+
+.homeHero div {
+    display: "flex";
+    flex-direction: "column";
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    text-align: end;
+    width: 40%;
+}
+
+.redBack {
+    background-color: #e62933;
+    height: 27vw;
+    width: 100%;
+    position: relative;
+}
+
+.redBack img {
+    position: absolute;
+    height: 45vw;
+    margin-top: -12vw;
+    margin-left: 12vw;
+}
+
+.blueBack {
+    padding: 2vw;
+    color: white;
+    position: absolute;
+    border-radius: 2vw;
+    border: 2px solid #fff;
+    background: linear-gradient(125deg,
+            #002a54 1.56%,
+            #002a54 49.23%,
+            rgba(0, 42, 84, 0.89) 95.34%);
+    backdrop-filter: blur(11px);
+    height: 30vw;
+    width: 40vw;
+    margin-left: 3vw;
+    margin-top: -2vw;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
