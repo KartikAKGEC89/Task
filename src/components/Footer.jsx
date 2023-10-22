@@ -1,135 +1,109 @@
-import React from 'react'
-import Up from '../assets/upArrow.svg'
-import Down from '../assets/downArrow.svg'
-import Facebook from '../assets/Frame.png'
-import Twitter from '../assets/Asset 1 1.png'
-import Insta from '../assets/Frame (1).png'
-import Linkdin from '../assets/Frame (2).png'
-import './main.css'
+import React, { useState } from "react";
+import downArrow from "../Assets/downArrow.svg"
+import upArrow from "../Assets/upArrow.svg"
+import fb from "../Assets/facebook.svg"
+import insta from "../Assets/insta.svg"
+import x from "../Assets/x.svg"
+import linkedin from "../Assets/linkedin.svg"
 
 const Footer = () => {
-    const [info, setInfo] = React.useState(false)
 
-    function up() {
-        setInfo(!info)
-    }
-    function down() {
-        setInfo(!info)
-    }
-    const [taxi, setTaxi] = React.useState(false)
-
-     function upArrow() {
-        setTaxi(!taxi)
-    }
-    function downArrow() {
-        setTaxi(!taxi)
-    }
-
-    const [container, setContainer] = React.useState(false)
-
-    function upArr() {
-        setContainer(!container)
-    }
-    function downArr() {
-        setContainer(!container)
-    }
+  const [infoAccordian,setInfoAccordian] = useState(false)
+  const [truckAccordian,setTruckAccordian] = useState(false)
+  const [transportAccordian,setTransportAccordian] = useState(false)
   return (
-    <>
-          <div className='footer'>
-              <div className='smallfooter'>
-                  <h3>INFORMATION</h3>
-                  <div>About us</div>
-                  <div>Careers</div>
-                  <div>Driver safety</div>
-                  <div>Contact us</div>
-                  <div>Terms of use</div>
-                  <div>Privacy Policy</div>
-              </div>  
-              <div className='smallfooter'>
-                  <h3>CONTAINER TRANSPORT</h3>
-                  <div>Convenience</div>
-                  <div>Location</div>
-                  <div>Live Unloads</div>
-                  <div>Side Loader Drops</div>
-                  <div>Imports and Exports</div>
-                  <div>50T Onsite Forklift</div>
-                  <div>Oversize, Overweight</div>
-                  <div> Dangerous Goods</div>
-                  <div>24/7 Operations</div>
-                  <div>Company Owned Fleet</div>
-              </div>    
-              <div className='smallfooter'>
-                  <h3>Complete warehousing solutions</h3>
-                  <div>Short & Long Term</div>
-                  <div>Indoor & Outdoor Storage</div>
-                  <div>Racked, Dry & Floor Stacked</div>
-                  <div>Distribution</div>
-                  <div>Import, Unpack, Pack, Ship</div>
-                  <div>Privacy Policy</div>
-                  <div>Sub-Leasing</div>
-                  <div>Secure Facilities</div>
-                  <div>Barcode Scanning</div>
-              </div> 
-            </div>
-         
-          <div className='mobilefooter'>
-              <div>
-                  <div>
-                      <p>INFORMATION</p>
-                      {info ? <img src={Up} alt='uparrow' onClick={up} /> : <img src={Down} alt='downarrow' onClick={down} />}   
-                  </div>
-                  {info && <ul className='smallfooter'>
-                  <li>About us</li>
-                  <li>Careers</li>
-                  <li>Driver safety</li>
-                  <li>Contact us</li>
-                  <li>Terms of use</li>
-                  <li>Privacy Policy</li>
-                  </ul>}
-              </div>
+    <div>
+      <div className="footer">
+        <div className="smlFoot">
+          <h3>INFORMATION</h3>
+          <div>About us</div>
+          <div>Carrers</div>
+          <div>Driver safety</div>
+          <div>Contact Us</div>
+          <div>Terms of use</div>
+          <div>Privacy Policy</div>
+        </div>
+        <div className="smlFoot">
+          <h3>CONTAINER TRANSPORT</h3>
+          <div>Convenience</div>
+          <div>Location</div>
+          <div>Live Unloads</div>
+          <div>Side Loader Drops</div>
+          <div>Imports and Exports</div>
+          <div>50T Onsite Forklift</div>
+          <div>Oversize, Overweight</div>
+          <div>Dangerous Goods</div>
+          <div>24/7 Operations</div>
+          <div>Company Owned Fleet</div>
+        </div>
+        <div className="smlFoot">
+          <h3>Complete warehousing solutions</h3>
+          <div>Short & Long Term</div>
+          <div>Indoor & Outdoor Storage</div>
+          <div>Racked, Dry & Floor Stacked</div>
+          <div>Distribution</div>
+          <div>Import, Unpack, Pack, Ship</div>
+          <div>Sub-Leasing</div>
+          <div>Secure Facilities</div>
+          <div>Barcode Scanning</div>
+        </div>
+      </div>
+      <div className="mobFooter">
+        <div>
+          <div>
+            <p>INFORMATION</p>
+            {infoAccordian ? <img onClick={()=>setInfoAccordian(false)} src={upArrow} alt="pic"/> :<img onClick={()=>setInfoAccordian(true)} src={downArrow} alt="pic"/>}
+          </div>
+          {infoAccordian && <ul className="smlFoot">
+            <li>About us</li>
+            <li>Carrers</li>
+            <li>Driver safety</li>
+            <li>Contact Us</li>
+            <li>Terms of use</li>
+            <li>Privacy Policy</li>
+          </ul>}
+        </div>
+        <div>
+          <div>
+            <p>TAXI & COURIER TRUCKS</p>
+            {truckAccordian ? <img onClick={()=>setTruckAccordian(false)} src={upArrow} alt="pic" /> :<img onClick={()=>setTruckAccordian(true)} src={downArrow} alt="pic" />}
+          </div>
+          {truckAccordian && <ul className="smlFoot">
+            <li>Versatile Fleet</li>
+            <li>Safety & Training</li>
+          </ul>}
+        </div>
+        <div>
+          <div>
+            <p>CONTAINER TRANSPORT</p>
+            {transportAccordian ? <img onClick={()=>setTransportAccordian(false)} src={upArrow} alt="pic"/> :<img onClick={()=>setTransportAccordian(true)} src={downArrow} alt="pic" />}
+          </div>
+          {transportAccordian && <ul className="smlFoot">
+            <li>Convenience</li>
+            <li>Location</li>
+            <li>Live Unloads</li>
+            <li>Side Loader Drops</li>
+            <li>Imports and Exports</li>
+            <li>50T Onsite Forklift</li>
+            <li>Oversize, Overweight</li>
+            <li>Dangerous Goods</li>
+            <li>24/7 Operations</li>
+            <li>Company Owned Fleet</li>
+          </ul>}
+        </div>
+        <hr className="ruler" />
+        <center><b>Social Media</b></center>
+        <div className="logos">
+          <img src={fb} alt="pic"/>
+          <img src={x} alt="pic"/>
+          <img src={insta} alt="pic"/>
+          <img src={linkedin} alt="pic"/>
+        </div>
+        <hr className="ruler" />
+        <center>© 2014 Swift Transport. All rights reserved.</center>
+      </div>
+    </div>
+  );
+};
 
-              <div>
-                  <div>
-                      <p>TAXI & COURIER TRUCKS</p>
-                      {taxi ? <img src={Up} alt='uparrow' onClick={upArrow} /> : <img src={Down} alt='downarrow' onClick={downArrow} />}   
-                  </div>
-                  {taxi && <ul className='smallfooter'>
-                   <li>Versatile Fleet</li>
-                   <li>Safety & Training</li>
-                  </ul>}
-              </div>
-
-              <div>
-                  <div>
-                      <p>CONTAINER TRANSPORT</p>
-                      {container ? <img src={Up} alt='uparrow' onClick={upArr} /> : <img src={Down} alt='downarrow' onClick={downArr} />}   
-                  </div>
-                  {container && <ul className='smallfooter'>
-                  <li>Short & Long Term</li>
-                  <li>Indoor & Outdoor Storage</li>
-                  <li>Racked, Dry & Floor Stacked</li>
-                  <li>Distribution</li>
-                  <li>Import, Unpack, Pack, Ship</li>
-                  <li>Privacy Policy</li>
-                  <li>Sub-Leasing</li>
-                  <li>Secure Facilities</li>
-                  <li>Barcode Scanning</li>
-                  </ul>}
-              </div>
-              <hr className="ruler" />
-              <center><b>Social Media</b></center>
-              <div className='logos'>
-                  <img src={Facebook } alt='Facebook' />
-                  <img src={Twitter} alt='Twitter' />
-                  <img src={Insta} alt='Insta' />
-                  <img src={Linkdin } alt='Linkedin'/>
-              </div>
-              <hr className="ruler" />
-              <center>© 2014 Swift Transport. All rights reserved.</center>
-            </div>
-          
-    </>
-  )
-}
-
-export default Footer
+export default Footer;

@@ -1,30 +1,41 @@
-import React from 'react'
-import Navbar2 from '../components/Navbar2'
-import './pages.css'
-import Truck from '../assets/Rectangle 9.png'
-import Arrow from '../assets/Arrow 1.png'
-import Arrow2 from '../assets/Arrow2.png'
-import Rail from '../assets/truck 1.png'
-import House from '../assets/container (4) 1.png'
-import Contain from '../assets/train-cargo (1) 1.png'
-import Truk from '../assets/warehouse 2.png'
-import Secure from '../assets/warehouse 2.png'
+import React from "react";
+import Navbar2 from "../Components/Navbar2";
+import Middle from "../Components/Middle";
+import Footer from "../Components/Footer";
+import truck from "../Assets/truck.svg";
+import truk from "../Assets/truk.svg";
+import rail from "../Assets/rail.svg";
+import contain from "../Assets/contain.svg";
+import house from "../Assets/house.svg";
+import secure from "../Assets/secure.svg";
+import orange from "../Assets/orangeArrow.svg";
+import white from "../Assets/whiteArrow.svg";
+import good from "../Assets/good.svg";
+import card from "../Assets/card.svg";
+import truckTwo from "../Assets/truckTwo.svg";
+import abc from "../Assets/abc.svg";
+import img1 from "../Assets/img1.svg";
+import img2 from "../Assets/img2.svg";
+import img3 from "../Assets/img3.svg";
+
 const Home = () => {
   return (
     <>
-      <Navbar2 />
-
       
-      <div className='homeHero'>
-      <div>
-        <h3 style={{
-          fontSize: "2.6vw",
-          marginBottom: "1.3vw",
-          lineHeight: "3vw",
-        }}>
-          Cheaper delivery costs through innovative vehicle design
+      <Navbar2 />
+      
+      <div className="homeHero">
+        <div>
+          <h3
+            style={{
+              fontSize: "2.6vw",
+              marginBottom: "1.3vw",
+              lineHeight: "3vw",
+            }}
+          >
+            Cheaper delivery costs through innovative vehicle design
           </h3>
-           <h5 style={{ fontSize: "1.5vw", lineHeight: "2vw" }}>
+          <h5 style={{ fontSize: "1.5vw", lineHeight: "2vw" }}>
             OUR 1 TONNE VEHICLES CAN HANDLE WHAT OTHERS CAN’T. YOU'LL BE
             PLEASANTLY SUPRISED
           </h5>
@@ -36,7 +47,7 @@ const Home = () => {
         </div>
       </div>
       
-       <div className="home">
+      <div className="home">
         <div className="redBack">
           <div className="blueBack">
             <h2
@@ -56,11 +67,11 @@ const Home = () => {
               <u>WHYSWIFT</u>
             </div>
           </div>
-          <img src={Truck} alt="truck" />
+          <img src={truck} alt="truck" />
         </div>
       </div>
-
-       <div className="service">
+     
+      <div className="service">
         <h3>Services</h3>
         <p className="smlTxt">
           A <span>smarter</span> container transport business
@@ -73,7 +84,7 @@ const Home = () => {
           <div className="flexCard">
             <p className="bigTxt1">Intermodal Rail terminal</p>
             <div className="image">
-              <img src={Rail} alt='rail'/>
+              <img src={rail} alt="pic"/>
             </div>
             <p className="smlTxt1">
               Network of strategically based sites located on port (within 1km
@@ -82,13 +93,13 @@ const Home = () => {
               All sites are connected to the Port by High Productivity…
             </p>
             <div className="arrow">
-              <img src={Arrow} alt="arrow" />
+              <img src={orange} alt="arrow" />
             </div>
           </div>
           <div className="flexCard">
             <p className="bigTxt1">Empty Container Depots</p>
             <div className="image">
-              <img src={Contain} alt='conatiner'/>
+              <img src={contain} alt="pic"/>
             </div>
             <p className="smlTxt1">
               Network of strategically based sites located on port (within 1km
@@ -97,13 +108,13 @@ const Home = () => {
               All sites are connected to the Port by High Productivity…
             </p>
             <div className="arrow">
-              <img src={Arrow} alt="arrow" />
+              <img src={orange} alt="arrow" />
             </div>
           </div>
           <div className="flexCard">
             <p className="bigTxt1">Warehousing – 3PL, FAK and eCommerce</p>
             <div className="image">
-              <img src={House} alt='house'/>
+              <img src={house} alt="pic" />
             </div>
             <p className="smlTxt1">
               Network of strategically based sites located on port (within 1km
@@ -112,13 +123,13 @@ const Home = () => {
               All sites are connected to the Port by High Productivity…
             </p>
             <div className="arrow">
-              <img src={Arrow} alt="arrow" />
+              <img src={orange} alt="arrow" />
             </div>
           </div>
           <div className="flexCard">
             <p className="bigTxt1">Transport - Container, Tautliner, Bulk</p>
             <div className="image">
-              <img src={Truk} alt='truck'/>
+              <img src={truk} alt="pic"/>
             </div>
             <p className="smlTxt1">
               Network of strategically based sites located on port (within 1km
@@ -127,13 +138,13 @@ const Home = () => {
               All sites are connected to the Port by High Productivity…
             </p>
             <div className="arrow">
-              <img src={Arrow} alt="arrow" />
+              <img src={orange} alt="arrow" />
             </div>
           </div>
           <div className="flexCol">
             <p className="bigTxt1">Bio-Security & Border Security (Customs)</p>
             <div className="image">
-              <img src={Secure} alt='secuer'/>
+              <img src={secure} alt="pic"/>
             </div>
             <p className="smlTxt1">
               Network of strategically based sites located on port (within 1km
@@ -142,13 +153,163 @@ const Home = () => {
               All sites are connected to the Port by High Productivity…
             </p>
             <div className="arrow">
-              <img src={Arrow2} alt="arrow" />
+              <img src={white} alt="arrow" />
             </div>
           </div>
         </div>
       </div>
-    </>
-  )
-}
+      
+      <div className="redBack3">
+        <p
+          style={{
+            display: "flex",
+            fontWeight: "bold",
+            color: "white",
+            fontSize: "2vw",
+          }}
+        >
+          News
+        </p>
+        <div className="flexContainer ">
+          <div className="flexCard2">
+            <img src={img1} alt="pic"/>
+            <p
+              style={{
+                fontSize: "1.8vw",
+                margin: "1vw",
+              }}
+            >
+              Asia-US container rates tick lower; Canada port strike enters 7th
+              day
+            </p>
+            <p
+              style={{
+                fontSize: "1.2vw",
+                margin: "1vw",
+              }}
+            >
+              Network of strategically based sites located on port (within 1km
+              of container terminals) and off-port (within 15kms of capital city
+              industrial zones){" "}
+            </p>
+            <p
+              style={{
+                color: "#ED1B24",
+                fontWeight: "bold",
+                margin: "1vw",
+                fontSize: "1.4vw",
+              }}
+            >
+              Read more
+            </p>
+          </div>
 
-export default Home
+          <div className="flexCard2">
+            <img src={img2} alt="pic"/>
+            <p
+              style={{
+                fontSize: "1.8vw",
+                margin: "1vw",
+              }}
+            >
+              World Shipping Council Releases Containers Lost At Sea Report
+            </p>
+            <p
+              style={{
+                fontSize: "1.2vw",
+                margin: "1vw",
+              }}
+            >
+              Network of strategically based sites located on port (within 1km
+              of container terminals) and off-port (within 15kms of capital city
+              industrial zones)
+            </p>
+            <p
+              style={{
+                color: "#ED1B24",
+                fontWeight: "bold",
+                margin: "1vw",
+                fontSize: "1.4vw",
+              }}
+            >
+              Read more
+            </p>
+          </div>
+
+          <div className="flexCard2">
+            <img src={img3} alt="pic"/>
+            <p
+              style={{
+                fontSize: "1.8vw",
+                margin: "1vw",
+              }}
+            >
+              Top Shipping Stocks for Q2 2023
+            </p>
+            <p
+              style={{
+                fontSize: "1.2vw",
+                margin: "1vw",
+              }}
+            >
+              ZIM Integrated Shipping Services, Kirby Corp., and Ardmore
+              Shipping are the top performers for value, growth, and momentum,
+              respectively.
+            </p>
+            <p
+              style={{
+                color: "#ED1B24",
+                fontWeight: "bold",
+                margin: "1vw",
+                fontSize: "1.4vw",
+              }}
+            >
+              Read more
+            </p>
+          </div>
+        </div>
+      </div>
+
+    
+      <div className="contactUs">
+        <div>
+          <p>Have a question regarding Swift services?</p>
+          <div style={{ display: "flex", fontWeight: "bold" }}>
+            <p>Contact us</p>
+            <img style={{ width: "4vw", marginLeft: "1vw" }} src={white} alt="pic" />
+          </div>
+        </div>
+      </div>
+      <div className="redBack2">
+        <div className="redTxt">
+          <p>You’ll be in good company</p>
+          <img src={good} alt="pic"/>
+        </div>
+        <div className="redCard">
+          <img src={card} alt="pic"/>
+        </div>
+      </div>
+   
+      <div className="truckTwo">
+        <div className="tr2">
+          <img src={truckTwo} style={{ height: "35vw" }} alt="pic"/>
+        </div>
+        <div>
+          <p style={{ color: "#002A54", fontSize: "2vw", fontWeight: "bold" }}>
+            We deliver, no matter how hard the challenge.
+          </p>
+          <img src={abc} style={{ height: "18vw" }} alt="pic"/>
+          <p className="smlTxt" style={{ color: "white" }}>
+            <u>Kennards Hire Case Study</u>
+          </p>
+        </div>
+      </div>
+
+      <Middle />
+     
+      <Footer />
+    </>
+  );
+};
+
+export default Home;
